@@ -10,7 +10,8 @@ pipeline {
         }
         stage('Action 2') {
           steps {
-            echo 'Hello Action 2'
+            echo 'Hello Action 2 Step 1'
+            echo 'Action 2 Step 2'
           }
         }
         stage('Action 3') {

@@ -42,15 +42,16 @@ pipeline {
             echo 'Hello Action 6'
           }
         }
-        stage('Action 7') {
+        stage('aloo') {
           steps {
             echo 'Hello Action 7'
+            unstash 'aloo'
           }
         }
       }
     }
   }
   environment {
-    Variable = 'ValueOfVariable'
+    aloo = 'aloo'
   }
 }

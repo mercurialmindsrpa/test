@@ -45,7 +45,6 @@ pipeline {
         stage('aloo') {
           steps {
             echo 'Hello Action 7'
-            unstash 'aloo'
           }
         }
       }
